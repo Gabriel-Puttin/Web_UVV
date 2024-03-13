@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#texto_grande {
+    font-size: larger;
+}
