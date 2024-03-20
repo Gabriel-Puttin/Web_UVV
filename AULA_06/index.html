@@ -106,7 +106,23 @@
             Cras maximus, enim id aliquet rutrum, augue turpis fermentum nunc, ut faucibus sem diam quis felis.
             Donec volutpat nulla ac venenatis vulputate. Suspendisse nulla ante, blandit quis faucibus tristique,
             imperdiet eget felis. Aliquam volutpat ante elit, eget porttitor nibh blandit quis.</abbr>
+        <h2>Código identado</h2>
+        <pre>
+            <code>
+                useEffect(() => {
+                    if (!user) return;
+                
+                    const { role } = user;
+                    if (role === 'administrator') navigate('/admin/manage');
+                    if (role === 'seller') navigate('/seller/orders');
+                    if (role === 'customer') navigate('/customer/products');
+                  }, [user, navigate]);
+            </code>
+        </pre>
     </section>
+    <footer>
+        <hr/>
+    </footer>
 </body>
 
 </html>
