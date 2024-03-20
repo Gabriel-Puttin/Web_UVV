@@ -10,20 +10,33 @@
             background-color: #252525;
             width: 100vw;
             height: 100vh;
+            color: white;
         }
         .imagem{
             display: flex;
             align-content: center;
             justify-content: center;
-            border: 5px solid red;
+        }
+        #img2{
+            width: 90px;
+            height: 90px;
+        }
+        h2 {
+            text-align: center;
         }
     </style>
     <title>Aula_03</title>
 </head>
 <body>
     <h1>Icon</h1>
+    <h2>Imagem Grande</h2>
     <div class="imagem">
-        <img src="https://static.vecteezy.com/ti/fotos-gratis/t2/6026259-tranquilo-verao-ferias-ferias-paisagem-tropical-ilha-por-do-sol-praia-palms-shore-calmo-mar-areia-exotico-natureza-cenario-inspirador-e-pacifico-paisagem-marinha-reflexo-ceu-por-do-sol-foto.jpg" alt="imagem de uma praia" />
+        <img src="./images/Imagem_01.jpg" alt="imagem de uma praia grande" />
+    </div>
+    <br />
+    <h2>Imagem pequena</h2>
+    <div class="imagem">
+        <img id="img2" src="./images/Imagem_01.jpg" alt="imagem de uma praia pequena" />
     </div>
 </body>
 </html>
