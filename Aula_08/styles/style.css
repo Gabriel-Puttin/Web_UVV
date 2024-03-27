@@ -1,4 +1,9 @@
 body{
-    background-color: black;
+    background-color: #252525;
     color: white;
+}
+
+a{
+    color: red;
+    text-decoration: none;
 }
