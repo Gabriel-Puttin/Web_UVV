@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Aula_08</title>
+    <title>Aula_09</title>
 </head>
-
 <body>
-  
+    <h1>Trabalhando com images dinâmicas</h1>
+    <picture>
+        <source media="(max-width: 1200px )" srcset="./images/paisagem_G.jpg" type="image/jpg" />
+        <source media="(max-width: 900px )" srcset="./images/paisagem_M" type="image/jpg" />
+        <source media="(max-width: 800px )" srcset="./images/paisagem_P.jpg" type="image/jpg" />
+        <img src="./images/paisagem-natural.jpg" alt="Imagem de uma paisagem" />
+    </picture>
 </body>
 </html>
