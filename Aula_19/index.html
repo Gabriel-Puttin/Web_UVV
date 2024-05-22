@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.writeln("Uso do document.writeIn");
+    </script>
+    <h1>Olá JavaScript</h1>
+    <script>
+        document.writeln("Uso do document.writeIn pela segunda vez");
+        window.alert("Olá código javascript");
+    </script>
+    <hr />
+    <div id="resposta">
+
+    </div>
+    <script>
+        const div = document.getElementById("resposta");
+        div.innerHTML = "Essa é a respota javascript";
+    </script>
+    <script>
+        const nome = window.prompt("Código window.prompt");
+        document.getElementById("resposta").innerHTML = nome;
+    </script>
+    <input id="login" type="text" size="60" />
+    <button onclick="ValideLogin()">Validar</button>
+    <script>
+        function ValideLogin() {
+            const login = document.getElementById("login").value;
+            console.log(login)
+            if (login == "admin") {
+                window.alert("Bem-vindo administrador");
+            } else {
+                window.alert("Você não é um administrador");
+            }
+        }
+    </script>
+</body>
+
+</html>
